@@ -49,6 +49,7 @@ button, select, input { font: inherit; color: inherit; }
 .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); }
 .hero h1 { font-size: clamp(2.15rem, 5.2vw, 3.7rem); font-weight: 780; letter-spacing: -.025em; max-width: 17ch; margin-bottom: .45em; }
 .hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--accent), #ff7a45); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero h1 em:lang(zh) { white-space: nowrap; }
 .lead { font-size: clamp(1.05rem, 1.6vw, 1.22rem); color: #c9d1db; max-width: 62ch; }
 .lead b { color: var(--ink); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.2rem; align-items: center; }
@@ -213,6 +214,14 @@ dl.meta dd { margin: 0; overflow-wrap: anywhere; }
   dl.meta { grid-template-columns: minmax(0, 1fr); }
   .chip { white-space: normal; }
   .brand small { display: none; }
+  .access { padding: 2.4rem 1rem; }
+  .access .mail { font-size: min(1.05rem, 4vw); max-width: 100%; overflow-wrap: anywhere; }
+}
+@media (max-width: 359px) {
+  .topbar .wrap { padding: 0 .9rem; gap: .6rem; }
+  .brand { font-size: .9rem; gap: .4rem; }
+  .brand img { width: 24px; height: 24px; }
+  .lang { font-size: .8rem; padding: .12rem .6rem; white-space: nowrap; }
 }
 @media print {
   .topbar, .toolbar, .zoom, .copy { display: none; }
