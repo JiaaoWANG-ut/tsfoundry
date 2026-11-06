@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tsfoundry.ai4mat.ai/sitemap.xml
+Sitemap: https://jiaaowang-ut.github.io/tsfoundry/sitemap.xml
